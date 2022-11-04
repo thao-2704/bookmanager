@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Student borrows</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Mã HS</th>
+      <th scope="col">Họ và tên</th>
+      <th scope="col">Lớp</th>
+      <th scope="col">Mã Sách</th>
+      <th scope="col">Tên Sách</th>
+      <th scope="col">Tên Tác Giả</th>
+      <th scope="col">Tủ sách</th>
+      <th scope="col">Số BM</th>
+      <th scope="col">Ngày mượn</th>
+      <th scope="col">Ngày trả</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @student_borrows.each do |student_borrow| %>
+  <tr>
+    <td><%= student_borrow.idStudent_258 %></td>
+    <td><%= student_borrow.fullname_258 %></td>
+    <td><%= student_borrow.class_258 %></td>
+    <td><%= student_borrow.idbook_258 %></td>
+    <td><%= student_borrow.namebook_string %></td>
+    <td><%= student_borrow.author_258 %></td>
+    <td><%= student_borrow.category_258 %></td>
+    <td><%= student_borrow.idBM_258 %></td>
+    <td><%= student_borrow.dateBorrow_258 %></td>
+    <td><%= student_borrow.dateBack_258 %></td>
+    <td>
+      <%= link_to "Show Student", student_borrow, class:'btn btn-info' %>
+    </td>
+    <% end %>
+  </tr>
+  </tbody>
+</table>
+<%= link_to "New student borrow", new_student_borrow_path %>

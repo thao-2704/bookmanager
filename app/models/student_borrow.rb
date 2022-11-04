@@ -1,0 +1,2 @@
+class StudentBorrow < ApplicationRecord
+end

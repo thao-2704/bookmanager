@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idStudent_258: MyString
+  fullname_258: MyString
+  class_258: MyString
+  idbook_258: MyString
+  namebook_string: MyString
+  author_258: MyString
+  category_258: MyString
+  idBM_258: MyString
+  dateBorrow_258: MyString
+  dateBack_258: MyString
+
+two:
+  idStudent_258: MyString
+  fullname_258: MyString
+  class_258: MyString
+  idbook_258: MyString
+  namebook_string: MyString
+  author_258: MyString
+  category_258: MyString
+  idBM_258: MyString
+  dateBorrow_258: MyString
+  dateBack_258: MyString
